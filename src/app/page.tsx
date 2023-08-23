@@ -1,4 +1,3 @@
-'use client'
 import Header from "../components/Header/Header";
 import SoldItems from "../components/SoldItems/SoldItems";
 import Welcome from "../components/Welcome/Welcome";
