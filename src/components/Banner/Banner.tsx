@@ -69,7 +69,7 @@ const partners = [
 
 const Banner = () => {
     return (
-        <div className='my-14'>
+        <div className='my-24' style={{height: "5vh"}}>
             <div className="flex flex-row overflow-hidden">
                 <div
                     id="container"

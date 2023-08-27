@@ -6,6 +6,7 @@ import OurProduct from "../components/OurProduct/OurProduct";
 import TalkToUs from "../components/TalkToUs/TalkToUs";
 import RootLayout from "./layout";
 import React from "react";
+import Welcome from "../components/Welcome/Welcome";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
               <Header />
               <Banner />
+              <Welcome />
               <SoldItems />
               <OurPartners />
               <OurProduct />

@@ -19,6 +19,9 @@ const config: Config = {
     },
     rotate: {
       '20': '20deg',
+      '10': '10deg',
+      '5': '5deg',
+      '3': '3deg',
     }
   },
   plugins: [],

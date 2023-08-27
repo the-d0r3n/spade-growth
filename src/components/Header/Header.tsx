@@ -36,7 +36,7 @@ const Header = () => {
                 </div>
                 <div className="font-light text-white text-8xl italic flex flex-row justify-center items-center z-10">
                     Viral Marketing
-                    <div className='border px-3 py-6 rounded-full text-xl -rotate-20 uppercase z-10 mt-8' style={{backgroundColor: '#212121'}}>
+                    <div className='border px-3 py-6 rounded-full text-xl -rotate-10 uppercase z-10 mt-8' style={{backgroundColor: '#212121'}}>
                         for
                     </div>
                 </div>
