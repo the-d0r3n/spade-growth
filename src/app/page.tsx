@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header";
 import SoldItems from "../components/SoldItems/SoldItems";
-import Welcome from "../components/Welcome/Welcome";
+import Banner from "../components/Banner/Banner";
 import OurPartners from "../components/OurPartners/OurPartners";
 import OurProduct from "../components/OurProduct/OurProduct";
 import TalkToUs from "../components/TalkToUs/TalkToUs";
@@ -12,7 +12,7 @@ export default function Home() {
       <RootLayout>
           <div className="container mx-auto px-4">
               <Header />
-              <Welcome />
+              <Banner />
               <SoldItems />
               <OurPartners />
               <OurProduct />

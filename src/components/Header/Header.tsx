@@ -30,6 +30,7 @@ const Header = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center h-screen gap-1 ">
+
                 <div className="text-main-yellow text-8xl font-bold rounded z-20">
                     World Class
                 </div>
