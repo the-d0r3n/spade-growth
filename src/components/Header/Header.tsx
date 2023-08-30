@@ -14,6 +14,7 @@ const Header = () => {
                     className="mr-2"
                     src={img1}
                     alt="img1"
+                    style={{height: '48vh', width: '48vw'}}
                 />
             </div>
             <div className='flex flex-row justify-between backdrop-blur z-10 p-2'>
@@ -24,11 +25,12 @@ const Header = () => {
 
             </div>
 
-            <div className='absolute bottom-0 right-0'>
+            <div className='absolute bottom-0 right-0 '>
                 <Image
+                    className=' object-fit'
                     src={img2}
                     alt="img2"
-
+                    style={{height: '40vh', width: '40vw'}}
                 />
             </div>
 

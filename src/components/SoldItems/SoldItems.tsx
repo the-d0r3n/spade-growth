@@ -9,7 +9,7 @@ const SoldItems = () => {
     const targetRef = useRef(null);
     const isOnScreen = useIsElementOnScreen(targetRef);
     return (
-        <section className="relative" style={{height: '40vh'}}>
+        <section className="relative" style={{height: '45vh'}}>
             <div className="absolute inset-0">
                 <Image
                     src={img4}
