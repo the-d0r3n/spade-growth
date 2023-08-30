@@ -1,8 +1,11 @@
+'use client'
 import React from 'react';
 import {Image} from "next/dist/client/image-component";
 import img3 from "../../images/img3.png";
+import star from "../../images/star.svg";
 
 const Welcome = () => {
+
     return (
         <div className="relative mt-14 flex flex-row justify-between" style={{minHeight: '700px'}}>
             <div className="w-8/12 flex flex-col justify-start items-start gap-4 uppercase">
@@ -16,7 +19,10 @@ const Welcome = () => {
                     </div>
 
                     <p className='leading-loose'> An influencer marketing agency Specialising in viral music campaigns</p>
-
+                    <Image
+                        src={star}
+                        alt="star"
+                    />
 
                 </div>
                 <div className='absolute bottom-25 right-0'>

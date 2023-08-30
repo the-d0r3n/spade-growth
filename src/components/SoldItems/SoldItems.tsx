@@ -40,7 +40,6 @@ const SoldItems = () => {
 
                         </div>
                     </div>
-
             </div>
         </section>
 

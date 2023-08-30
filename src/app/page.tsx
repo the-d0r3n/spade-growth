@@ -7,6 +7,7 @@ import TalkToUs from "../components/TalkToUs/TalkToUs";
 import RootLayout from "./layout";
 import React from "react";
 import Welcome from "../components/Welcome/Welcome";
+import CircleArrow from "../components/CircleArrow";
 
 export default function Home() {
   return (
@@ -29,8 +30,12 @@ export default function Home() {
                   </div>
 
               </div>
-
-              <SoldItems />
+                <div className='relative'>
+                    <SoldItems />
+                    <div className="absolute" style={{bottom: '-55px', left: '74px'}}>
+                        <CircleArrow />
+                    </div>
+                </div>
               <OurPartners />
               <OurProduct />
               <TalkToUs />
