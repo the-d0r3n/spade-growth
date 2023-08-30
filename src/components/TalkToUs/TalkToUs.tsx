@@ -52,10 +52,9 @@ const TalkToUs = () => {
                                 <label htmlFor="message" className="block text-2xl mb-1">How can we help you?</label>
                                 <textarea
                                     id="message"
-                                    rows="4"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
-                                    className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-blue-300 bg-trsprnt"
+                                    className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-blue-300 bg-trsprnt py-8"
                                     required
                                 />
                             </div>
