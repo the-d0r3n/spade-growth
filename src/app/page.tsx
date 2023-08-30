@@ -8,6 +8,7 @@ import RootLayout from "./layout";
 import React from "react";
 import Welcome from "../components/Welcome/Welcome";
 import CircleArrow from "../components/CircleArrow";
+import AlbumCard from "../components/AlbumCard";
 
 export default function Home() {
   return (
@@ -28,7 +29,6 @@ export default function Home() {
                           <Banner withBorder />
                       </div>
                   </div>
-
               </div>
                 <div className='relative'>
                     <SoldItems />
@@ -37,7 +37,11 @@ export default function Home() {
                     </div>
                 </div>
               <OurPartners />
-              <OurProduct />
+              <div className='relative flex flex-col justify-center items-center'>
+                  <OurProduct />
+                  <AlbumCard />
+              </div>
+
               <TalkToUs />
           </div>
       </RootLayout>

@@ -9,7 +9,6 @@ const TalkToUs = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission here
         console.log('Email:', email);
         console.log('Message:', message);
         // Clear form fields after submission
@@ -17,7 +16,7 @@ const TalkToUs = () => {
         setMessage('');
     };
     return (
-        <section className="relative" style={{height: '650px'}}>
+        <section className="relative" style={{height: '80vh'}}>
             <div className="absolute inset-0">
                 <Image
                     src={talkToUs}

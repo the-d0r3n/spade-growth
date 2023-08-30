@@ -6,7 +6,7 @@ import PartnersBanner from "../PartnersBanner/PartnersBanner";
 const OurPartners = () => {
 
     return (
-        <div className='flex flex-col w-max-screen mt-36' style={{height: '50vh'}}>
+        <div className='flex flex-col w-max-screen mt-36' style={{height: '800px'}}>
             <div className='flex flex-row justify-center relative'>
                 <h2 className="text-8xl font-semibold mb-4 text-main-yellow">Our Partners</h2>
                 <div className='absolute right-48 mr-8 mt-12'>
