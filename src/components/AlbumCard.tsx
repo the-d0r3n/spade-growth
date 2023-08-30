@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import {Image} from "next/dist/client/image-component";
 import album from "../images/album.png";
-import {Counter} from "./Counter";
+
 const AlbumCard = () => {
     const [hover, setHover] = useState(false)
     const onMouseEnter = () => {
@@ -14,7 +14,7 @@ const AlbumCard = () => {
     }
     return (
         <div
-            className='absolute bottom-72 flex flex-col justify-center items-center z-20'
+            className='absolute bottom-60 flex flex-col justify-center items-center z-20'
         >
             {!hover ? <Image
                 onMouseEnter={onMouseEnter}

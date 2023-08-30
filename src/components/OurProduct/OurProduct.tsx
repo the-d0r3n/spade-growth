@@ -8,7 +8,7 @@ const OurProduct = () => {
     return (
         <div className='relative' style={{height: '50vh'}}>
             <div className='relative flex flex-row z-10'>
-                <div className='absolute left-56 -top-72'>
+                <div className='absolute left-56 -top-70'>
                     <Image
                         src={star}
                         alt="star"
@@ -20,7 +20,7 @@ const OurProduct = () => {
                         <Banner withBorder />
                     </div>
                 </div>
-                <div className='absolute right-56 top-48'>
+                <div className='absolute right-56 top-44'>
                     <Image
                         src={flower}
                         alt="flower"
