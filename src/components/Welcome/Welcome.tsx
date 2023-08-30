@@ -4,7 +4,7 @@ import img3 from "../../images/img3.png";
 
 const Welcome = () => {
     return (
-        <div className="relative mt-14 flex flex-row justify-between" style={{height: '60vh'}}>
+        <div className="relative mt-14 flex flex-row justify-between" style={{minHeight: '700px'}}>
             <div className="w-8/12 flex flex-col justify-start items-start gap-4 uppercase">
 
                 <div className="font-light text-white text-5xl italic flex flex-col justify-items-stretch items-start z-10 gap-8 pl-24">
