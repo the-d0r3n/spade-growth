@@ -1,14 +1,13 @@
 import React from 'react';
 import {Image} from "next/dist/client/image-component";
 import img3 from "../../images/img3.png";
-import img2 from "../../images/img2.png";
 
 const Welcome = () => {
     return (
-        <div className="relative my-14 flex flex-row justify-between" style={{height: '50vh'}}>
+        <div className="relative mt-14 flex flex-row justify-between" style={{minHeight: '50vh'}}>
             <div className="w-8/12 flex flex-col justify-start items-start gap-4 uppercase">
 
-                <div className="font-light text-white text-5xl italic flex flex-col justify-items-stretch items-start z-10 gap-8">
+                <div className="font-light text-white text-5xl italic flex flex-col justify-items-stretch items-start z-10 gap-8 pl-24">
                     <div className="flex flex-row  justify-items-stretch  items-start gap-4 whitespace-nowrap">
                         <p>Welcome to</p>
                         <div className='border rounded-full text-4xl -rotate-3 uppercase z-10  px-6' style={{backgroundColor: '#212121'}}>

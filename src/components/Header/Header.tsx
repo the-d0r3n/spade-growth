@@ -11,21 +11,24 @@ const Header = () => {
         <section className='relative h-screen'>
             <div className='absolute -top-1'>
                 <Image
-                    className=" mr-2"
+                    className="mr-2"
                     src={img1}
                     alt="img1"
                 />
             </div>
-            <div className='flex flex-row justify-between backdrop-blur z-10'>
+            <div className='flex flex-row justify-between backdrop-blur z-10 p-2'>
                 <Logo />
-                <PrimaryButton text='Let’s Chat!'  onClick={()=>console.log('click')}/>
+                <div className='pr-4'>
+                    <PrimaryButton text='Let’s Chat!'  onClick={()=>console.log('click')}/>
+                </div>
+
             </div>
 
             <div className='absolute bottom-0 right-0'>
                 <Image
-                    className=" mr-2"
                     src={img2}
                     alt="img2"
+
                 />
             </div>
 

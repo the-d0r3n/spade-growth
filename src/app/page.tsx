@@ -11,10 +11,25 @@ import Welcome from "../components/Welcome/Welcome";
 export default function Home() {
   return (
       <RootLayout>
-          <div className="container mx-auto px-4">
+          <div className="mx-auto">
               <Header />
-              <Banner />
+              <div className='mt-16'>
+                  <Banner />
+              </div>
+
               <Welcome />
+              <div className='relative  flex flex-row z-10'  >
+                  <div className='w-screen'>
+                      <div className='absolute w-full -rotate-3 ' >
+                          <Banner withBorder />
+                      </div>
+                      <div className='absolute w-full rotate-3'>
+                          <Banner withBorder />
+                      </div>
+                  </div>
+
+              </div>
+
               <SoldItems />
               <OurPartners />
               <OurProduct />

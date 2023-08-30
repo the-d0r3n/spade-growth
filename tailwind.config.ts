@@ -16,6 +16,7 @@ const config: Config = {
     },
     colors: {
       'main-yellow': '#FFFF00',
+      'dark-bg': '#0a0a0a',
     },
     rotate: {
       '20': '20deg',

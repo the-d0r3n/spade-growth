@@ -64,14 +64,13 @@ const partners = [
 
 ];
 
-const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
-    const border = "border bg-dark-bg flex flex-row items-center justify-center py-4 z-20"
+const PartnersBanner = () => {
     return (
-        <div style={{height: "5vh"}}>
+        <div className='my-24' style={{height: "5vh"}}>
             <div className="flex flex-row overflow-hidden">
                 <div
                     id="container"
-                    className={`flex flex-row items-center ${withBorder ? border : ''}`}
+                    className='flex flex-row items-center'
                 >
                     {partners.map((partner, index) => (
                         <div
@@ -87,4 +86,4 @@ const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
     );
 };
 
-export default Banner;
+export default PartnersBanner;
