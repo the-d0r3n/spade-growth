@@ -32,12 +32,12 @@ export default function Home() {
               </div>
                 <div className='relative'>
                     <SoldItems />
-                    <div className="absolute" style={{bottom: '-55px', left: '74px'}}>
+                    <div className="absolute" style={{bottom: '-85px', left: '74px'}}>
                         <CircleArrow />
                     </div>
                 </div>
               <OurPartners />
-              <div className='relative flex flex-col justify-center items-center'>
+              <div className='relative'>
                   <OurProduct />
                   <AlbumCard />
               </div>

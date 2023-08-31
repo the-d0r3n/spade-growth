@@ -6,9 +6,9 @@ import flower from "../../images/flower.svg";
 
 const OurProduct = () => {
     return (
-        <div className='relative' style={{height: '50vh'}}>
+        <div className='relative' style={{height: '600px'}}>
             <div className='relative flex flex-row z-10'>
-                <div className='absolute left-56 -top-52'>
+                <div className='absolute left-56 ' style={{top: '-23vh'}}>
                     <Image
                         src={star}
                         alt="star"
@@ -20,7 +20,7 @@ const OurProduct = () => {
                         <Banner withBorder />
                     </div>
                 </div>
-                <div className='absolute right-56 top-48'>
+                <div className='absolute right-56' style={{top: '16vh'}}>
                     <Image
                         src={flower}
                         alt="flower"

@@ -11,7 +11,6 @@ const TalkToUs = () => {
         e.preventDefault();
         console.log('Email:', email);
         console.log('Message:', message);
-        // Clear form fields after submission
         setEmail('');
         setMessage('');
     };
@@ -29,7 +28,7 @@ const TalkToUs = () => {
             </div>
             <div className="flex h-full relative z-10" >
 
-                <div className="mt-8 flex items-start justify-center w-6/12">
+                <div className="mt-20 flex items-start justify-center w-6/12">
                     <h1 className="text-8xl font-bold mb-4 flex flex-row justify-center text-main-yellow">
                         Talk to us
                     </h1>
