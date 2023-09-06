@@ -13,7 +13,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap:60px }
+  gap:60px
+}
 
 .items {
   animation: moving 8s infinite linear;
@@ -86,5 +87,26 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+#partners {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.partner-items {
+  animation: moving 14s infinite linear;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(-1400px, 0)
+  }
+
+  100% {
+    transform: translate(1400px, 0)
   }
 }
