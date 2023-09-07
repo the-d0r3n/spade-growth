@@ -68,22 +68,25 @@ const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
     const border = "border bg-dark-bg flex flex-row items-center justify-center py-4 z-20"
     return (
         <div style={{height: "5vh"}}>
-            <div className="flex flex-row overflow-hidden">
-                <div
-                    id="container"
-                    className={`flex flex-row items-center ${withBorder ? border : ''}`}
-                >
-                    {partners.map((partner, index) => (
-                        <div
-                            key={index}
-                            className="items flex flex-row items-center"
-                        >
-                            {partner}
-                        </div>
-                    ))}
+            <div style={{  marginLeft: '-50px'}}>
+                <div className=" overflow-hidden">
+                    <div
+                        id="container"
+                        className={`${withBorder ? border : 'flex flex-row items-center justify-center py-4 z-20'}`}
+                    >
+                        {partners.map((partner, index) => (
+                            <div
+                                key={index}
+                                className="items flex flex-row items-center"
+                            >
+                                {partner}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
+
     );
 };
 
