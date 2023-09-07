@@ -15,7 +15,7 @@ const AlbumCard = () => {
     }
 
     const redirectToSpotify = () => {
-        const spotifyUrl = 'https://www.spotify.com/';
+        const spotifyUrl = 'https://www.tiktok.com/music/Florida-Water-feat-Luh-Tyler-7202507652059006978?is_from_webapp=1&sender_device=pc';
         window.location.href = spotifyUrl;
     };
     return (
