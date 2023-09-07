@@ -6,7 +6,7 @@ import PartnersBanner from "../PartnersBanner/PartnersBanner";
 const OurPartners = () => {
 
     return (
-        <div className='flex flex-col w-max-screen mt-36' style={{height: '700px'}}>
+        <div className='flex flex-col w-max-screen my-36' style={{height: '700px'}}>
             <div className='flex flex-row justify-center relative'>
                 <div>
                     <svg width="806" height="218" viewBox="0 0 806 218" fill="none" xmlns="http://www.w3.org/2000/svg">
