@@ -11,7 +11,7 @@ body {
 #container {
   display: flex;
   flex-direction: row;
-  gap:160px
+  gap:100px
 }
 
 .items {

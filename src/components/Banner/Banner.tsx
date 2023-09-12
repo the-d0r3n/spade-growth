@@ -74,7 +74,7 @@ const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
                         id="container"
                         className={`${withBorder ? border : 'flex flex-row items-center justify-center py-4 z-20'}`}
                     >
-                        {partners.map((partner, index) => (
+                        {[...partners, ...partners].map((partner, index) => (
                             <div
                                 key={index}
                                 className="items flex flex-row items-center"

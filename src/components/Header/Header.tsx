@@ -10,7 +10,7 @@ const Header = () => {
         <section>
 
             <div className='relative h-screen' >
-                <div className='absolute -top-1'>
+                <div className='absolute -top-16'>
                     <Image
                         className="mr-2"
                         src={img1}
