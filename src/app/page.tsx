@@ -9,10 +9,12 @@ import React from "react";
 import Welcome from "../components/Welcome/Welcome";
 import CircleArrow from "../components/CircleArrow";
 import AlbumCard from "../components/AlbumCard";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
       <RootLayout>
+          <Navbar />
           <div className="mx-auto">
               <Header />
               <div className='mt-16'>

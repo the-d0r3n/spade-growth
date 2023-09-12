@@ -68,7 +68,7 @@ const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
     const border = "border bg-dark-bg flex flex-row items-center justify-center py-4 z-20"
     return (
         <div style={{height: "5vh"}}>
-            <div style={{  marginLeft: '-50px'}}>
+            <div style={{  marginLeft: '-45px', marginRight: '-45px'}}>
                 <div className=" overflow-hidden">
                     <div
                         id="container"

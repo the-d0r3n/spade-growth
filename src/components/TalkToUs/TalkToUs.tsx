@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 import {Image} from "next/dist/client/image-component";
 import talkToUs from "../../images/talkToUs.png";
+import PrimaryButton from "../PrimaryButton";
 
 const TalkToUs = () => {
     const [email, setEmail] = useState('');
@@ -13,6 +14,10 @@ const TalkToUs = () => {
         console.log('Message:', message);
         setEmail('');
         setMessage('');
+    };
+
+    const copyrightStyle = {
+        fontFamily: 'Syncopate, sans-serif'
     };
     return (
         <section className="relative" style={{height: '80vh'}}>
@@ -46,32 +51,29 @@ const TalkToUs = () => {
                                     id="email"
                                     value={email}
                                     onChange={(e) => setEmail(e?.target?.value)}
-                                    className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-blue-300 bg-trsprnt"
+                                    className="mt-1 p-2 w-full border focus:ring focus:ring-blue-300 bg-trsprnt"
                                     required
+                                    placeholder='name@mail.com'
                                 />
                             </div>
                             <div className="mb-10">
                                 <label htmlFor="message" className="block text-2xl mb-1">How can we help you?</label>
                                 <textarea
+                                    placeholder='Let us know what you need'
                                     id="message"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
-                                    className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-blue-300 bg-trsprnt py-8"
+                                    className="mt-1 p-2 w-full border focus:ring focus:ring-blue-300 bg-trsprnt pb-12"
                                     required
                                 />
                             </div>
                             <div className="flex justify-start">
-                                <button
-                                    type="submit"
-                                    className="px-4 py-2 border text-xl uppercase text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"
-                                >
-                                    Submit
-                                </button>
+                                <PrimaryButton text='Submit' onClick={handleSubmit} />
                             </div>
                         </form>
                     </div>
                 </div>
-                <div className='absolute bottom-0 uppercase mb-4 italic opacity-20' style={{right: '35%'}}>Copyright © 2023 Spade growth. All rights reserved.</div>
+                <div className='absolute bottom-0 uppercase mb-4  opacity-20' style={{right: '35%', copyrightStyle}}>Copyright © 2023 Spade growth. All rights reserved.</div>
             </div>
 
         </section>

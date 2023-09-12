@@ -10,10 +10,10 @@ const Welcome = () => {
         <div className="relative mt-14 flex flex-row justify-between" style={{minHeight: '700px'}}>
             <div className="w-8/12 flex flex-col justify-start items-start gap-4 uppercase">
 
-                <div className="font-light text-white text-5xl italic flex flex-col justify-items-stretch items-start z-10 gap-8 pl-24">
+                <div className="font-light text-white text-5xl  flex flex-col justify-items-stretch items-start z-10 gap-8 pl-24">
                     <div className="flex flex-row  justify-items-stretch  items-start gap-4 whitespace-nowrap">
                         <p>Welcome to</p>
-                        <div className='border rounded-full text-4xl -rotate-3 uppercase z-10  px-6' style={{backgroundColor: '#212121'}}>
+                        <div className='border font-semibold py-2 -mt-3 rounded-full text-4xl -rotate-3 uppercase z-10  px-6' style={{backgroundColor: '#212121'}}>
                             SPADE GROWTH
                         </div>
                     </div>
@@ -23,7 +23,6 @@ const Welcome = () => {
                         src={star}
                         alt="star"
                     />
-
                 </div>
                 <div className='absolute bottom-25 right-0'>
                     <Image

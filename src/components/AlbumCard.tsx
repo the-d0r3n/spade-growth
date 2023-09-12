@@ -16,11 +16,11 @@ const AlbumCard = () => {
 
     const redirectToSpotify = () => {
         const spotifyUrl = 'https://www.tiktok.com/music/Florida-Water-feat-Luh-Tyler-7202507652059006978?is_from_webapp=1&sender_device=pc';
-        window.location.href = spotifyUrl;
+        window.open(spotifyUrl, '_blank');
     };
     return (
         <div
-            className='absolute left-[35%] bottom-60 flex flex-col justify-center items-center z-20'
+            className='absolute left-0 right-0 bottom-60 m-auto flex flex-col justify-center items-center z-20'
 
         >
             <ReactCardFlip isFlipped={hover} flipDirection="horizontal">

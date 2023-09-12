@@ -4,10 +4,12 @@ import img4 from "../../images/img4.png";
 import {Image} from "next/dist/client/image-component";
 import {Counter} from "../Counter";
 import useIsElementOnScreen from "../useIsElementOnScreen";
+import useScrollDirection from "../../hooks/useScrollDirection";
 
 const SoldItems = () => {
     const targetRef = useRef(null);
     const isOnScreen = useIsElementOnScreen(targetRef);
+    const scrollDirection = useScrollDirection();
     return (
         <section className="relative" style={{height: '650px'}}>
             <div className="absolute inset-0">
@@ -32,7 +34,7 @@ const SoldItems = () => {
                                 </svg>
                             </div>
                             <h1 className="text-8xl font-bold mb-4 flex flex-row justify-center text-main-yellow">
-                                {isOnScreen &&  <><Counter from={0} to={200} />M+</>}
+                                 <Counter from={0} to={200} />M+
                             </h1>
 
                         </div>
@@ -47,7 +49,7 @@ const SoldItems = () => {
                             </div>
                             <div className="relative">
                                 <h1 className="text-8xl font-bold mb-4 flex flex-row justify-center text-main-yellow">
-                                    {isOnScreen && <><Counter from={0} to={700} />M</>}
+                                    <Counter from={0} to={700} />M
                                 </h1>
                                 <div className='absolute -right-24 ' style={{top: '35px'}}>
                                     <svg  width="162" height="86" viewBox="0 0 162 86" fill="none" xmlns="http://www.w3.org/2000/svg">

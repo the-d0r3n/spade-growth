@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400;1,500&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400;1,500&family=Syncopate:wght@400;700&display=swap');
 body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background: #0a0a0a;
+  overflow-x: hidden;
 }
 #container {
   display: flex;
@@ -16,7 +15,7 @@ body {
 }
 
 .items {
-  animation: moving 8s infinite linear;
+  animation: moving 24s infinite linear;
 }
 
 @keyframes moving {
@@ -105,4 +104,7 @@ body {
   100% {
     transform: translate(1400px, 0)
   }
+}
+.btn-font {
+  font-family: 'Syncopate, sans-serif' !important;
 }
