@@ -108,3 +108,7 @@ body {
 .btn-font {
   font-family: 'Syncopate, sans-serif' !important;
 }
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}

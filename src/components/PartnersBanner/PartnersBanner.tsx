@@ -37,9 +37,10 @@ const PartnersBanner = () => {
                 loop={true}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2000,
+                    delay: 1,
                     disableOnInteraction: false,
                 }}
+                speed={5000}
                 modules={[Autoplay]}
             >
                 <SwiperSlide>
