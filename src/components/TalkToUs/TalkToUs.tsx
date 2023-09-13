@@ -8,7 +8,7 @@ const TalkToUs = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e?: any) => {
         e.preventDefault();
         console.log('Email:', email);
         console.log('Message:', message);
@@ -17,7 +17,8 @@ const TalkToUs = () => {
     };
 
     const copyrightStyle = {
-        fontFamily: 'Syncopate, sans-serif'
+        fontFamily: 'Syncopate, sans-serif',
+        fontSize: '12px'
     };
     return (
         <section className="relative" style={{height: '80vh'}}>
@@ -73,7 +74,7 @@ const TalkToUs = () => {
                         </form>
                     </div>
                 </div>
-                <div className='absolute bottom-0 uppercase mb-4  opacity-20' style={{right: '35%', copyrightStyle}}>Copyright © 2023 Spade growth. All rights reserved.</div>
+                <div className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center' style={copyrightStyle}>Copyright © 2023 Spade growth. All rights reserved.</div>
             </div>
 
         </section>
