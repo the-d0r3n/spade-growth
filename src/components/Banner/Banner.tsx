@@ -64,8 +64,9 @@ const partners = [
 
 ];
 
-const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
+const Banner = ({withBorder = false, reverse= false} : {withBorder?: boolean, reverse?: boolean}) => {
     const border = "border bg-dark-bg flex flex-row items-center justify-center py-4 z-20"
+    const reverseItems = 'items-reverse flex flex-row items-center'
     return (
         <div style={{height: "5vh"}}>
             <div style={{  marginLeft: '-45px', marginRight: '-45px'}}>
@@ -77,7 +78,7 @@ const Banner = ({withBorder = false} : {withBorder?: boolean}) => {
                         {[...partners, ...partners].map((partner, index) => (
                             <div
                                 key={index}
-                                className="items flex flex-row items-center"
+                                className={reverse ? reverseItems : "items flex flex-row items-center"}
                             >
                                 {partner}
                             </div>

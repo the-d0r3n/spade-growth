@@ -25,10 +25,10 @@ export default function Home() {
               <div className='relative  flex flex-row z-10'  >
                   <div className='w-screen'>
                       <div className='absolute w-full -rotate-3 ' >
-                          <Banner withBorder />
+                          <Banner withBorder  reverse />
                       </div>
                       <div className='absolute w-full rotate-3'>
-                          <Banner withBorder />
+                          <Banner withBorder  />
                       </div>
                   </div>
               </div>

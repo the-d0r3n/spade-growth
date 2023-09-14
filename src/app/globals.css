@@ -11,19 +11,24 @@ body {
 #container {
   display: flex;
   flex-direction: row;
-  gap:100px
+  gap:100px;
 }
 
 .items {
-  animation: moving 24s infinite linear;
+  animation: moving 12s infinite cubic-bezier(0.4, -0.6, 0.4, 0);
 }
+
+.items-reverse {
+  animation: moving 24s infinite linear reverse;
+}
+
 
 @keyframes moving {
   0% {
-    transform: translate(-900px, 0)
+    transform: translateX(-100%);
   }
   100% {
-    transform: translate(0px, 0)
+    transform: translateX(100%);
   }
 }
 
