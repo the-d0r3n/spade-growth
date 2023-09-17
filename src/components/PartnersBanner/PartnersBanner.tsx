@@ -40,7 +40,7 @@ const PartnersBanner = () => {
                     delay: 1,
                     disableOnInteraction: false,
                 }}
-                speed={5000}
+                speed={3000}
                 modules={[Autoplay]}
             >
                 <SwiperSlide>

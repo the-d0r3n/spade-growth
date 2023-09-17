@@ -15,7 +15,7 @@ body {
 }
 
 .items {
-  animation: moving 12s infinite cubic-bezier(0.4, -0.6, 0.4, 0);
+  animation: moving 12s infinite linear;
 }
 
 .items-reverse {
@@ -111,7 +111,7 @@ body {
   }
 }
 .btn-font {
-  font-family: 'Syncopate, sans-serif' !important;
+  font-family: 'Syncopate', sans-serif;
 }
 
 .swiper-wrapper {
