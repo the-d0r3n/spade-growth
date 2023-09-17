@@ -74,7 +74,7 @@ const TalkToUs = () => {
                         </form>
                     </div>
                 </div>
-                <div className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center' style={copyrightStyle}>Copyright © 2023 Spade growth. All rights reserved.</div>
+                <div className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade growth. All rights reserved.</div>
             </div>
 
         </section>
