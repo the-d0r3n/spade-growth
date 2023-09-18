@@ -7,7 +7,7 @@ import star from "../../images/star.svg";
 const Welcome = () => {
 
     return (
-        <div className="relative mt-14 flex flex-row justify-between" style={{minHeight: '700px'}}>
+        <div className="relative mt-48 flex flex-row justify-between" style={{minHeight: '700px'}}>
             <div className="w-8/12 flex flex-col justify-start items-start gap-4 uppercase">
 
                 <div className="font-light text-white text-5xl  flex flex-col justify-items-stretch items-start z-10 gap-8 pl-24">

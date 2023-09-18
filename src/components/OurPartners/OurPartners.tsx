@@ -17,8 +17,6 @@ const OurPartners = () => {
                         <path d="M734.874 202.768C785.122 184.391 793.089 118.624 757.598 92.894" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M743.534 181.946C741.226 195.405 733.745 203.254 733.745 203.254C733.745 203.254 746.502 204.603 756.245 209.592" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
-
                 </div>
 
             </div>

@@ -32,7 +32,7 @@ const PartnersBanner = () => {
             <Swiper
                 ref={swiperElRef}
                 spaceBetween={20}
-                slidesPerView={3}
+                slidesPerView={6}
                 navigation={false}
                 loop={true}
                 centeredSlides={true}
@@ -44,7 +44,10 @@ const PartnersBanner = () => {
                 modules={[Autoplay]}
             >
                 <SwiperSlide>
-                    <Image className='mx-auto' priority src={atlantic} alt="atlantic" />
+                    <Image  className='mx-auto' priority src={interscope} alt="interscope" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={universal} alt="universal" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image  className='mx-auto' priority src={def_jam} alt="def_jam" />
@@ -53,7 +56,13 @@ const PartnersBanner = () => {
                     <Image  className='mx-auto' priority src={empire} alt="empire" />
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Image className='mx-auto' priority src={atlantic} alt="atlantic" />
+                </SwiperSlide>
+                <SwiperSlide>
                     <Image  className='mx-auto' priority src={everybody} alt="everybody" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={warner} alt="warner" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image  className='mx-auto' priority src={interscope} alt="interscope" />
@@ -62,8 +71,42 @@ const PartnersBanner = () => {
                     <Image  className='mx-auto' priority src={universal} alt="universal" />
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Image  className='mx-auto' priority src={def_jam} alt="def_jam" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={empire} alt="empire" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image className='mx-auto' priority src={atlantic} alt="atlantic" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={everybody} alt="everybody" />
+                </SwiperSlide>
+                <SwiperSlide>
                     <Image  className='mx-auto' priority src={warner} alt="warner" />
                 </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={interscope} alt="interscope" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={universal} alt="universal" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={def_jam} alt="def_jam" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={empire} alt="empire" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image className='mx-auto' priority src={atlantic} alt="atlantic" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={everybody} alt="everybody" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image  className='mx-auto' priority src={warner} alt="warner" />
+                </SwiperSlide>
+
             </Swiper>
         </div>
     );

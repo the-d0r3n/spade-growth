@@ -75,7 +75,7 @@ const Banner = ({withBorder = false, reverse= false} : {withBorder?: boolean, re
                         id="container"
                         className={`${withBorder ? border : 'flex flex-row items-center justify-center py-4 z-20'}`}
                     >
-                        {[...partners, ...partners].map((partner, index) => (
+                        {[...partners, ...partners, ...partners, ...partners, ...partners, ...partners].map((partner, index) => (
                             <div
                                 key={index}
                                 className={reverse ? reverseItems : "items flex flex-row items-center"}
