@@ -68,8 +68,8 @@ const Banner = ({withBorder = false, reverse= false} : {withBorder?: boolean, re
     const border = "border bg-dark-bg flex flex-row items-center justify-center py-4 z-20"
     const reverseItems = 'items-reverse flex flex-row items-center'
     return (
-        <div style={{height: "5vh"}}>
-            <div style={{  marginLeft: '-45px', marginRight: '-45px'}}>
+        <div style={{height: "5vh", width: '100%' }}>
+            <div style={{  marginLeft: '-45px', marginRight: '-45px', }}>
                 <div className=" overflow-hidden">
                     <div
                         id="container"

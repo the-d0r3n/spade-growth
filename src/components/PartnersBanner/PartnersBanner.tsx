@@ -10,8 +10,10 @@ import universal from '../../images/logos/universal.png';
 import warner from '../../images/logos/warner.png';
 import { Image } from 'next/dist/client/image-component';
 import { Autoplay} from 'swiper/modules';
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const PartnersBanner = () => {
+    const isMobile = useMediaQuery('(max-width: 768px)');
     const swiperElRef = useRef(null);
 
     useEffect(() => {
@@ -32,7 +34,7 @@ const PartnersBanner = () => {
             <Swiper
                 ref={swiperElRef}
                 spaceBetween={20}
-                slidesPerView={6}
+                slidesPerView={isMobile ? 4 : 6}
                 navigation={false}
                 loop={true}
                 centeredSlides={true}

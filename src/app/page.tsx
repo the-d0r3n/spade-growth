@@ -7,9 +7,9 @@ import TalkToUs from "../components/TalkToUs/TalkToUs";
 import RootLayout from "./layout";
 import React from "react";
 import Welcome from "../components/Welcome/Welcome";
-import CircleArrow from "../components/CircleArrow";
 import AlbumCard from "../components/AlbumCard";
 import Navbar from "../components/Navbar";
+import CircleDivider from "../components/CircleDivider";
 
 export default function Home() {
   return (
@@ -34,9 +34,7 @@ export default function Home() {
               </div>
                 <div className='relative'>
                     <SoldItems />
-                    <div className="absolute" style={{bottom: '-85px', left: '74px'}}>
-                        <CircleArrow />
-                    </div>
+                    <CircleDivider/>
                 </div>
               <OurPartners />
               <div className='relative'>
