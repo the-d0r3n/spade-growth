@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 
 const partners = [
@@ -67,12 +68,14 @@ const partners = [
 const Banner = ({withBorder = false, reverse= false} : {withBorder?: boolean, reverse?: boolean}) => {
     const border = "border bg-dark-bg flex flex-row items-center justify-center py-4 z-20"
     const reverseItems = 'items-reverse flex flex-row items-center'
+    const isMobile = useMediaQuery('(max-width: 768px)');
     return (
-        <div style={{height: "5vh", width: '100%' }}>
-            <div style={{  marginLeft: '-45px', marginRight: '-45px', }}>
+        <div style={{height: "5vh" }}>
+            <div style={{  marginLeft: '-45px', marginRight: isMobile? '-5px' :'-45px', }}>
                 <div className=" overflow-hidden">
                     <div
                         id="container"
+                        style={{borderRight: 'none'}}
                         className={`${withBorder ? border : 'flex flex-row items-center justify-center py-4 z-20'}`}
                     >
                         {[...partners, ...partners, ...partners, ...partners, ...partners, ...partners].map((partner, index) => (
