@@ -17,7 +17,7 @@ const TalkToUs = () => {
         setMessage('');
     };
     return (
-        <section className="relative" style={{height: isMobile ? '115vh' : '80vh', marginTop: '-80px'}}>
+        <section className="relative" style={{height: isMobile ? '95vh' : '80vh', marginTop: '-80px'}}>
             <div className="absolute inset-0">
                 <Image
                     src={talkToUs}
@@ -80,7 +80,7 @@ const TalkToUs = () => {
                     </div>
                 </div>
                 {!isMobile && <div className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade growth. All rights reserved.</div>}
-                {isMobile && <small className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade growth. All rights reserved.</small>}
+                {isMobile && <small className='ml-1 absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade growth. All rights reserved.</small>}
             </div>
 
         </section>

@@ -33,8 +33,8 @@ const PartnersBanner = () => {
         <div className="my-24" style={{ height: '5vh' }}>
             <Swiper
                 ref={swiperElRef}
-                spaceBetween={20}
-                slidesPerView={isMobile ? 4 : 6}
+                spaceBetween={isMobile ? 30 : 20}
+                slidesPerView={isMobile ? 3 : 6}
                 navigation={false}
                 loop={true}
                 centeredSlides={true}
