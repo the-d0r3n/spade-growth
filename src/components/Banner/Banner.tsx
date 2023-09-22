@@ -70,7 +70,7 @@ const Banner = ({withBorder = false, reverse= false} : {withBorder?: boolean, re
     const reverseItems = 'items-reverse flex flex-row items-center'
     const isMobile = useMediaQuery('(max-width: 768px)');
     return (
-        <div style={{height: "5vh" }}>
+        <div style={{height: "5vh", width: '98%' }}>
             <div style={{  marginLeft: '-45px', marginRight: isMobile? '-5px' :'-45px', }}>
                 <div className=" overflow-hidden">
                     <div

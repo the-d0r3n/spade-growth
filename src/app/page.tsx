@@ -24,8 +24,8 @@ export default function Home() {
               <Welcome />
               <div className='relative  flex flex-row z-10'  >
                   <div className='w-screen'>
-                      <div className='absolute w-full -rotate-3 ' >
-                          <Banner withBorder  reverse />
+                      <div className='absolute w-full  ' style={{transform: 'rotate(-3deg)', left: '0', right: '0'}} >
+                          <Banner withBorder reverse />
                       </div>
                       <div className='absolute w-full rotate-3'>
                           <Banner withBorder  />

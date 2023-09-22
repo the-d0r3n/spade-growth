@@ -21,6 +21,7 @@ const config: Config = {
       'trsprnt': 'transparent',
     },
     rotate: {
+      '50': '50deg',
       '20': '20deg',
       '10': '10deg',
       '5': '5deg',
