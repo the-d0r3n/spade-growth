@@ -79,8 +79,8 @@ const TalkToUs = () => {
                         </form>
                     </div>
                 </div>
-                {!isMobile && <div className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade growth. All rights reserved.</div>}
-                {isMobile && <small className='ml-1 absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade growth. All rights reserved.</small>}
+                {!isMobile && <div className='absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade group. All rights reserved.</div>}
+                {isMobile && <small className='ml-1 absolute left-0 right-0 bottom-0 uppercase mb-4 m-auto opacity-20 flex flex-row justify-center'>Copyright © 2023 Spade group. All rights reserved.</small>}
             </div>
 
         </section>

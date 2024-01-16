@@ -4,7 +4,7 @@ import 'typeface-montserrat';
 
 
 export const metadata: Metadata = {
-  title: 'Spade Growth',
+  title: 'Spade Group',
   description: 'World Class' +
       'Viral Marketing' +
       'World Class Music'
