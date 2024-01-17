@@ -22,7 +22,7 @@ const OurProduct = () => {
                 <div className='w-screen'>
                     <div className='absolute w-full rotate-10 z-20' >
 
-                        {!isMobile && <Banner withBorder/>}
+                        {!isMobile && <Banner withBorder caseStudy/>}
                         {!isMobile && <svg style={{zIndex: -4}} className='absolute -top-20 left-0 right-0 m-auto ' width="734"
                                 height="236" viewBox="0 0 734 236" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -50,7 +50,7 @@ const OurProduct = () => {
                     />}
                 </div>
                 {isMobile && <div className='absolute w-full rotate-10 z-20' style={{top: '-120px'}}>
-                    <Banner withBorder/>
+                    <Banner withBorder caseStudy/>
                 </div>}
 
             </div>

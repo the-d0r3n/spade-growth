@@ -7,6 +7,7 @@ const Logo = () => {
             className=" ml-3"
             src={logo}
             alt="Logo"
+            width={84}
         />
     );
 };

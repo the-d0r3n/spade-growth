@@ -1,14 +1,6 @@
 import './globals.css'
-import type {Metadata} from 'next'
 import 'typeface-montserrat';
 
-
-export const metadata: Metadata = {
-  title: 'Spade Group',
-  description: 'World Class' +
-      'Viral Marketing' +
-      'World Class Music'
-}
 
 export default function RootLayout({
   children,
