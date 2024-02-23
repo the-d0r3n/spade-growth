@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400;1,500&family=Syncopate:wght@400;700&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: #0a0a0a;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  gap:100px;
+}
+
+.items {
+  animation: moving 12s infinite linear;
+}
+
+.items-reverse {
+  animation: moving 24s infinite linear reverse;
+}
+
+
+@keyframes moving {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.spiningSvg {
+  margin: 20px;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 6000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 6000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#partners {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.partner-items {
+  animation: moving 14s infinite linear;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(-1400px, 0)
+  }
+
+  100% {
+    transform: translate(1400px, 0)
+  }
+}
+.btn-font {
+  font-family: 'Syncopate', sans-serif;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 10px solid #212226;
+  border-top: 10px solid #FFFF00;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 120px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
