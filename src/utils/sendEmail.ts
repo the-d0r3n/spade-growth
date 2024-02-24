@@ -17,8 +17,8 @@ export default async function handler(
     const { name, email, message } = req.body
 
     const messageData = {
-        from: 'Contact Form <contact@mg.ethanmick.com>',
-        to: 'ethan@ethanmick.com',
+        from: 'Contact Form <yassin@spadegroup.io>',
+        to: 'yassin@spadegroup.io',
         subject: 'New Contact Form!',
         text: `Hello,
 
