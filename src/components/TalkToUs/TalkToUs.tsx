@@ -4,8 +4,6 @@ import {Image} from "next/dist/client/image-component";
 import talkToUs from "../../images/talkToUs.png";
 import PrimaryButton from "../PrimaryButton";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import {sendEmail} from "../../utils/sendEmail";
-import {confirmEmail} from "../../utils/mail";
 
 
 const TalkToUs = () => {
@@ -15,30 +13,30 @@ const TalkToUs = () => {
 
     const handleSubmit = async (e?: any) => {
         e.preventDefault();
-        confirmEmail('yassin@spadegroup.io', email, message, null)
-        // const data = {
-        //     to: 'yassin@spadegroup.io',
-        //     subject: email,
-        //     text: message,
-        // };
-        //
-        // try {
-        //     const response = await fetch('/api/sendEmail', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-        //         body: JSON.stringify(data),
-        //     });
-        //
-        //     if (response.ok) {
-        //
-        //     } else {
-        //         console.error('Failed to send email:', response.statusText);
-        //     }
-        // } catch (error) {
-        //     console.error('Failed to send email:', error.message);
-        // }
+        // confirmEmail('yassin@spadegroup.io', email, message, null)
+        const data = {
+            to: 'yassin@spadegroup.io',
+            subject: email,
+            text: message,
+        };
+
+        try {
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+
+            } else {
+                console.error('Failed to send email:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Failed to send email:', error.message);
+        }
         console.log('Email:', email);
         console.log('Message:', message);
         setEmail('');
